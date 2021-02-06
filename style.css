@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Pangolin&family=Raleway:wght@300&display=swap');
+
+body{
+    font-family:"Pangolin", cursive;
+    margin: 0px;
+    display: block;
+}
+#header{
+    background-image: linear-gradient(to right, #fabb68 , rgb(247,224,19));
+    text-align: center;
+    margin: 0px;
+    padding: 1em;
+    font-family: "Merriweather", cursive;
+    font-size: larger;
+}
+#main{
+    padding: 2rem;
+    margin-left: 375px;
+    margin-right: 375px;
+    display: block;
+    
+}
+.box{
+    background-image: linear-gradient(to right, #fabb68 , rgb(247, 224, 19));
+    height: 60px;
+    width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-family: "Georgia", cursive;
+    font-size: larger;
+    letter-spacing: 1px;
+  }
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 190px;
+    cursor: pointer;
+    color:black;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.3s;
+  }
+  .btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn:hover::after {
+    opacity: 5;
+    transform: scale(1,1);
+  }
+
+textarea {
+    padding: 1rem;
+    margin: 1rem;
+    height: 10vh;
+    width: 100%;
+    display: block;
+    font-family:"", cursive;
+    font-size: large;
+}
+
+#outputwillcomehere{
+    margin-top:2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size:large;
+}
+
+#output {
+    border: 1px solid black ;
+    margin: 1rem;
+    height: 10vh;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    font-family: "Georgia", cursive;
+}
+
+#footer {
+    height: 150px;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, #fabb68 , rgb(247, 224, 19));
+}
+
+p{
+    font-size: large;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#footer p {
+    max-width: 550px;
+    margin: auto;
+}
