@@ -1,24 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Pangolin&family=Raleway:wght@300&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 body{
     font-family:"Pangolin", cursive;
-    margin: 0px;
+    margin:auto;
     display: block;
 }
 #header{
     background-image: linear-gradient(to right, #fabb68 , rgb(247,224,19));
     text-align: center;
-    margin: 0px;
-    padding: 1em;
+    padding: 1rem;
     font-family: "Merriweather", cursive;
-    font-size: larger;
+    font-size: 1rem;
 }
+
+#h1{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 #main{
-    padding: 2rem;
-    margin-left: 375px;
-    margin-right: 375px;
+    height: auto;
+    padding: 1rem;
+    max-width: 600px;
+    margin:auto;
     display: block;
-    
 }
 .box{
     background-image: linear-gradient(to right, #fabb68 , rgb(247, 224, 19));
@@ -27,9 +38,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    font-family: "Georgia", cursive;
-    font-size: larger;
+    font-family: "Times New Roman", cursive;
+    font-size: x-large;
     letter-spacing: 1px;
   }
 
@@ -78,37 +88,33 @@ body{
 
 textarea {
     padding: 1rem;
-    margin: 1rem;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     display: block;
     font-family:"", cursive;
     font-size: large;
+    margin-bottom: 1rem;
 }
 
 #outputwillcomehere{
     margin-top:2rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
     font-size:large;
 }
 
 #output {
     border: 1px solid black ;
-    margin: 1rem;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     display: block;
-    padding: 1rem;
     font-family: "Georgia", cursive;
 }
 
 #footer {
-    height: 150px;
-    margin: 0px;
-    position: fixed;
-    bottom: 0;
+    height: 200px;
     width: 100%;
+    position: fixed;
+    bottom: 0;;
     text-align: center;
     background-image: linear-gradient(to right, #fabb68 , rgb(247, 224, 19));
 }
@@ -125,4 +131,44 @@ p{
 #footer p {
     max-width: 550px;
     margin: auto;
+}
+
+link {
+  text-decoration: none;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display:inline;
+}
+
+#footer .social-icon {
+  width: 2.3rem;
+  padding-right: 0.5rem;
+}
+ul{
+  padding-inline-start: 10px;
+}
+
+@media (min-width: 700px) {
+  #footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #header{
+    width: auto;
+    height: auto;
+  }
+  #footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
 }
